@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "https://twitter.com/Peerbits"
   
   s.source       = { :git => "https://github.com/Peerbits/PBPopupList.git", :tag => "#{s.version}" }
-  s.source_files  = "PBPopupList", "PBPopupList/**/*.{h,m}"
+  s.source_files  = "PBPopupList", "PBPopupList/**/*.{h,m,swift}"
   
   #Or just: s.author    = "Shahabuddin"
   #s.authors            = { "Shahabuddin" => "Shahbuddin@peerbits.com" }
