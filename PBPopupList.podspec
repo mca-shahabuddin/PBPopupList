@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.version      = "1.0.0"
   s.platform     = :ios
   s.summary      = "PBPopup List view."
-  s.description		= "Display list of data in your view controller with search option. You can display list of zipcode, Country list, State list, Category list, etc"
+  s.description		= "This PBPopup List is to overcome the loss of usability and user experience due to the custom list view. Display list of data in your view controller with search option. You can display list of zipcode, Country list, State list, Category list, etc"
   s.homepage     	= "https://www.peerbits.com/"
   
   s.license      = { :type => "MIT", :file => "LICENSE" }
