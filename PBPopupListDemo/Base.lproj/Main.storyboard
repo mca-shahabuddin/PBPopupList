@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j8V-IB-b4K">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Kgp-PF-uUi">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="j8V-IB-b4K" customClass="ViewController" customModule="PBPopupListDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PIs-sa-DtB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Executed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtl-vm-KFw">
+                                <rect key="frame" x="123" y="333" width="129.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mm7-pv-War">
+                                <rect key="frame" x="135" y="374" width="105" height="30"/>
+                                <state key="normal" title="Show PBPopup"/>
+                                <connections>
+                                    <action selector="btnPbPopupAction:" destination="j8V-IB-b4K" eventType="touchUpInside" id="DKv-Ku-a44"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mm7-pv-War" firstAttribute="top" secondItem="gtl-vm-KFw" secondAttribute="bottom" constant="20" id="B7E-0p-dAH"/>
+                            <constraint firstItem="gtl-vm-KFw" firstAttribute="centerY" secondItem="kSz-Xa-sGC" secondAttribute="centerY" id="Gj5-Ca-YXI"/>
+                            <constraint firstItem="gtl-vm-KFw" firstAttribute="centerX" secondItem="kSz-Xa-sGC" secondAttribute="centerX" id="PTf-CM-3L4"/>
+                            <constraint firstItem="mm7-pv-War" firstAttribute="centerX" secondItem="gtl-vm-KFw" secondAttribute="centerX" id="bd6-st-PqO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kSz-Xa-sGC"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnShowpopup" destination="mm7-pv-War" id="koc-oH-osW"/>
+                        <outlet property="lblValue" destination="gtl-vm-KFw" id="7ud-Wo-Sid"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CPw-PA-TxB" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
